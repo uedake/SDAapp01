@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sdaapp01"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="com.nttdocomo.android.smartdeviceagent.permission.BRIDGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:name="com.activeandroid.app.Application"
+        android:icon="@drawable/corn"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+            android:name="com.nttdocomo.android.smartdeviceagent.feature.support" android:value="true" />
+        <meta-data
+            android:name="com.nttdocomo.android.smartdeviceagent.feature.mail_notification" android:value="true" />
+        <meta-data
+            android:name="com.nttdocomo.android.smartdeviceagent.feature.setting_activity" 
+            android:value="\#Intent;action=android.intent.action.MAIN;component=com.example.sdaapp01/.MainActivity;end" />
+        
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="com.example.sdaapp01.CReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.nttdocomo.android.smartdeviceagent.action.PHONE_NOTIFICATION"/>
+                <action android:name="com.nttdocomo.android.smartdeviceagent.action.NOTIFICATION"/>
+                <action android:name="com.nttdocomo.android.smartdeviceagent.action.ACTIVITY_INFO_REQ"/>
+                <action android:name="com.nttdocomo.android.smartdeviceagent.action.RECEIVED_MAIL"/>
+                <action android:name="com.nttdocomo.android.smartdeviceagent.action.SCHEDULE"/>
+                <action android:name="com.nttdocomo.android.smartdeviceagent.action.OTHER_NOTIFICATION"/>
+                </intent-filter>
+        </receiver>
+        
+        <provider
+            android:name="FileProvider" 
+            android:authorities="com.example.sdaapp01"
+            android:exported="true"
+            /> 
+        
+    </application>
+
+</manifest>

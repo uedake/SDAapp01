@@ -1,0 +1,3 @@
+C:\Android\AndroidstudioProjects\SDAapp01\app\build\intermediates\classes\debug
+C:\Android\AndroidstudioProjects\SDAapp01\app\build\intermediates\pre-dexed\debug\activeandroid-7a74be12690c07744b0b0d7d0a544b0c6dd0a855.jar
+C:\Android\AndroidstudioProjects\SDAapp01\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-7541db917baa506c0dd564574dda219c7099e134.jar

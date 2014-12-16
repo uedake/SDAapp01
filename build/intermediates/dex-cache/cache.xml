@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Android\AndroidstudioProjects\SDAapp01\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-7541db917baa506c0dd564574dda219c7099e134.jar" />
+    </item>
+    <item
+        jar="C:\Android\AndroidstudioProjects\SDAapp01\app\libs\activeandroid.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="08126b279ed235b6dbc121b6c722ab3b9edb72c1">
+        <dex dex="C:\Android\AndroidstudioProjects\SDAapp01\app\build\intermediates\pre-dexed\debug\activeandroid-7a74be12690c07744b0b0d7d0a544b0c6dd0a855.jar" />
+    </item>
+
+</items>
